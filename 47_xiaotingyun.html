@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>47_xiaotingyun</title>
+    <meta name="description" content="3列、2行のgridを作成し、各セル内の文字をすべて下揃えにせよ">
+    <style>
+        .container {
+            text-align: center;
+            width: 300px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,100px);
+            gap: 10px;
+            margin: 350px auto;
+            align-items: end;
+            
+        }
+        .item {
+            display: grid;
+            place-items: end center;
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body> 
+<div class="container">  
+    <div class="item">うめこ</div>
+    <div class="item">こぶちゃん</div>
+    <div class="item">たてはくん</div>
+    <div class="item">リリィちゃん</div>
+    <div class="item">ブランくん</div>
+    <div class="item">バンくん</div>
+</div>
+    </body>
+</html>
